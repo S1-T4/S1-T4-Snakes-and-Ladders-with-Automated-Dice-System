@@ -1,4 +1,6 @@
 # S1-T4
+## Snakes and Ladders Game with Automated Dice System
+
 
 <!-- First Section -->
 ## Team Details
@@ -11,11 +13,11 @@
 
   > Team ID: T4
 
-  > Member-1: Kashish Prajapat , 231CS129 . kashishprajapat.231cs129@nitk.edu.in 
+  Member-1: Kashish Prajapat , 231CS129 . kashishprajapat.231cs129@nitk.edu.in 
 
-  > Member-2: Vaishnavi Khade , 231CS130 . khadevaishnavi.231cs130@nitk.edu.in
+  Member-2: Vaishnavi Khade , 231CS130 . khadevaishnavi.231cs130@nitk.edu.in
 
-  > Member-3: Anurag  Wagh  , 231CS166 . waghanuragarjun.231cs166@nitk.edu.in 
+  Member-3: Anurag  Wagh  , 231CS166 . waghanuragarjun.231cs166@nitk.edu.in 
 </details>
 
 <!-- Second Section -->
