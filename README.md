@@ -25,7 +25,7 @@
 <details>
   <summary>Detail</summary>
   
-  >Motivation
+  >Motivation:
 Snake and Ladder has been a classical board game, enjoyed by children and adult alike. However, the old version of the game can feel too simple, especially when today we are surrounded by technology and it has become a big part in our lives.by adding technology to the game, we can make it more exciting, fun and educational. So the goal is to combine this classical board game with modern technology which will provide more features to the game, thus making it more interactive to keep players interested while they are playing.
 
 
@@ -73,7 +73,9 @@ The digital Snakes and Ladders game system incorporates several interactive and 
 <details>
   <summary>Detail</summary>
   
-> 
+1. Raghuram42, \textit{Snake and Ladders LLD}. GitHub: \url{https://github.com/Raghuram42/snakeandladdersLLD} \\ 
+2. rajpatel5, \textit{Snakes and Ladder}. GitHub: \url{https://github.com/rajpatel5/SnakesAndLadder} \\ 
+3. YouTube Video: \url{https://www.youtube.com/watch?v=NLzZQ3ROa7Q
    
 </details>
 
