@@ -73,9 +73,9 @@ The digital Snakes and Ladders game system incorporates several interactive and 
 <details>
   <summary>Detail</summary>
   
-1. Raghuram42, \textit{Snake and Ladders LLD}. GitHub: \url{https://github.com/Raghuram42/snakeandladdersLLD} \\ 
-2. rajpatel5, \textit{Snakes and Ladder}. GitHub: \url{https://github.com/rajpatel5/SnakesAndLadder} \\ 
-3. YouTube Video: \url{https://www.youtube.com/watch?v=NLzZQ3ROa7Q
+1. Raghuram42, \textit{Snake and Ladders LLD}. GitHub: https://github.com/Raghuram42/snakeandladdersLLD} \\ 
+2. rajpatel5, \textit{Snakes and Ladder}. GitHub: https://github.com/rajpatel5/SnakesAndLadder} \\ 
+3. YouTube Video: https://www.youtube.com/watch?v=NLzZQ3ROa7Q
    
 </details>
 
