@@ -1,5 +1,4 @@
-# S1-T4
-## Snakes and Ladders Game with Automated Dice System
+# Snakes and Ladders Game with Automated Dice System
 
 
 <!-- First Section -->
