@@ -41,7 +41,8 @@ The digital Snakes and Ladders game system incorporates several interactive and 
 <details>
   <summary>Detail</summary>
   
-![image]https://github.com/S1-T4/S1-T4/blob/main/Block%20Diagram/IMG_20241008_094150.jpg
+![17283609163896010471208824632293](https://github.com/user-attachments/assets/87c3e93b-710c-4d24-b5b7-8bbfa6ba6934)
+
 
 
 </details>
