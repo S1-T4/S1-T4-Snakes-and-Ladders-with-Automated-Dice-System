@@ -93,12 +93,19 @@ If they land on a snake, the state moves to a lower value.
 Stepwise Logisim Circuit Design:
 1: Dice Roll Logic
 The  random generator generates a random  value between 1 and 6. In Logisim, this can be simulated using a counter and a button for the player to "roll" the dice. Each time the button is pressed, the dice rolls.
+
+ 
 2: Player Position Tracker
 Create a register to hold player position.Add the dice value to the player’s current position to get the new position.The player's position is updated after every dice roll, and we use an adder to calculate the new position.Set a comparator to check if the player position + dice value is greater than 100.
 If the position exceeds 100, reset the player position to the current value (no movement).
 This module handles adjusting the player's position when they land on a snake or ladder.
+
+
 3.Snakes And Ladders:This module detects when and if a player lands on a snake or ladder. comparator is used for each snake and ladder.The output of the player position register to the input of each comparator.Each comparator  checks for specific positions where snakes or ladders are located.The comparator output is connected to a multiplexer input and multiplexer’s output to player position register.This will result into adjusting the player’s position according to the snake or ladder.
+
+
 4.Game End Detection:The player position register is now connected to another comparator.And it is set  to check if the player position equals 100.	The output of this comparator is connected to an LED.It will light up when the player wins
+
 5.Clock and Reset:A clock is used to generate a pulse for the game to proceed.A reset button is also used to reset the game.
   > 
 </details>
@@ -109,15 +116,24 @@ This module handles adjusting the player's position when they land on a snake or
   <summary>Detail</summary>
 . Dice Roll Module
 This module simulates a dice roll with values ranging from 1 to 6. On each positive edge of the clock or when a reset occurs, the dice value is updated. If reset is active, the dice value resets to 1. Otherwise, it increments cyclically to simulate a dice roll, wrapping back to 1 after reaching 6.
+
+ 
 2. Position Tracker Module
 This module updates the player’s position based on the dice roll. It checks if the sum of the current position and the dice value exceeds 100. If the sum is valid, the new position is updated. If not, the player stays at the same position to ensure the position does not exceed 100.
+
+
 3. Snakes and Ladders Adjustment Module
 This module adjusts the player’s position if it lands on a snake or ladder. Using a case statement, it maps specific positions to new ones. For example, landing on 17 moves the player back to 7 (snake), while landing on 28 moves them to 84 (ladder). If the position does not correspond to a snake or ladder, the position remains unchanged.
+
+
 4. Game End Detection Module
 This module checks if the player has won the game. If the player’s position equals 100, the win signal is set to 1, indicating victory. Otherwise, the signal remains 0.
+
 5. Top-Level Game Module
 This module integrates the dice, position tracker, snakes and ladders adjustment, and game end detection modules. It updates the player’s position and win status on each clock cycle. If reset is activated, the player’s position resets to 0. Otherwise, the position is updated based on the dice roll and adjusted for any snakes or ladders.
-6. Testbench Module
+
+
+6.. Testbench Module
 The testbench simulates the complete game system. It initializes the clock and reset signals, toggling the clock every 5 time units. After 10 units, the reset is deactivated to start the game. The simulation runs , during which the player’s position and win status are continuously monitored. The testbench helps ensure the game logic works as expected by displaying the position and win status at each time step.
 
 This design efficiently models  snakes and ladders game in Verilog, using modular components for easy testing and simulation.
