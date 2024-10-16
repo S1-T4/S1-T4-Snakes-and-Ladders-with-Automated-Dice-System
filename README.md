@@ -89,6 +89,9 @@ If they land on a snake, the state moves to a lower value.
 ## Logisim Circuit Diagram
 <details>
   <summary>Detail</summary>
+	
+	<img src="https://github.com/user-attachments/assets/c817d21c-8d68-46c8-9940-464b6586506e" alt="Logisim Circuit" width="300" />
+
 Stepwise Logisim Circuit Design:
 1: Dice Roll Logic
 The  random generator generates a random  value between 1 and 6. In Logisim, this can be simulated using a counter and a button for the player to "roll" the dice. Each time the button is pressed, the dice rolls.
