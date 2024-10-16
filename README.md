@@ -41,7 +41,7 @@ The digital Snakes and Ladders game system incorporates several interactive and 
 <details>
   <summary>Detail</summary>
   
-  <img src="https://github.com/user-attachments/assets/87c3e93b-710c-4d24-b5b7-8bbfa6ba6934" alt="Functional Block Diagram" width="1500" />
+  <img src="https://github.com/user-attachments/assets/87c3e93b-710c-4d24-b5b7-8bbfa6ba6934" alt="Functional Block Diagram" width="300" />
   
 </details>
 
@@ -90,26 +90,25 @@ If they land on a snake, the state moves to a lower value.
 <details>
   <summary>Detail</summary>
   
-  <img src="https://github.com/user-attachments/assets/b0157b2d-0fc5-4413-b083-39321ec24bbf" alt="Logisim Circuit Diagram" width="300" />
+![image](https://github.com/user-attachments/assets/b62fcafd-c6ce-436d-8976-55e0af547463)
+
   
-Stepwise Logisim Circuit Design:
-1: Dice Roll Logic
-The  random generator generates a random  value between 1 and 6. In Logisim, this can be simulated using a counter and a button for the player to "roll" the dice. Each time the button is pressed, the dice rolls.
+### Stepwise Logisim Circuit Design
 
- 
-2: Player Position Tracker
-Create a register to hold player position.Add the dice value to the player’s current position to get the new position.The player's position is updated after every dice roll, and we use an adder to calculate the new position.Set a comparator to check if the player position + dice value is greater than 100.
-If the position exceeds 100, reset the player position to the current value (no movement).
-This module handles adjusting the player's position when they land on a snake or ladder.
+1. **Dice Roll Logic**: 
+   Use a random generator to simulate a dice roll (1-6) with a counter and a button. Each button press triggers a new roll.
 
+2. **Player Position Tracker**: 
+   Create a register to hold the player's position. Add the dice value to update the position. Use a comparator to check if the new position exceeds 100; if so, reset the position. This also manages adjustments for snakes and ladders.
 
-3.Snakes And Ladders:This module detects when and if a player lands on a snake or ladder. comparator is used for each snake and ladder.The output of the player position register to the input of each comparator.Each comparator  checks for specific positions where snakes or ladders are located.The comparator output is connected to a multiplexer input and multiplexer’s output to player position register.This will result into adjusting the player’s position according to the snake or ladder.
+3. **Snakes and Ladders**: 
+   Detect when a player lands on a snake or ladder using comparators for specific positions. The output connects to a multiplexer, adjusting the player’s position accordingly.
 
+4. **Game End Detection**: 
+   Connect the player position register to a comparator to check for a win condition (position equals 100). An LED lights up to indicate victory.
 
-4.Game End Detection:The player position register is now connected to another comparator.And it is set  to check if the player position equals 100.	The output of this comparator is connected to an LED.It will light up when the player wins
-
-5.Clock and Reset:A clock is used to generate a pulse for the game to proceed.A reset button is also used to reset the game.
-  > 
+5. **Clock and Reset**: 
+   A clock pulse drives game progression, and a reset button initializes the game.
 </details>
 
 <!-- Fifth Section -->
