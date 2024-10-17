@@ -121,31 +121,14 @@ The table shows how the game works.
 <!-- Fifth Section -->
 ## Verilog Code
 <details>
-  <summary>Detail</summary>
-. Dice Roll Module
-This module simulates a dice roll with values ranging from 1 to 6. On each positive edge of the clock or when a reset occurs, the dice value is updated. If reset is active, the dice value resets to 1. Otherwise, it increments cyclically to simulate a dice roll, wrapping back to 1 after reaching 6.
+	<summary>Details</summary>
+  The provided Verilog code implements a SnakesAndLadders module that simulates a two-player snakes and ladders game. The system includes inputs such as clock, reset, dice roll, and player turn, as well as tracking encounters with snakes and ladders. It calculates the players' positions based on dice rolls and adjusts for snakes (moving them down) or ladders (moving them up). The module ensures that the player’s position is displayed on a 7-segment display, and once a player reaches or exceeds a position of 100, they are declared the winner. The system also incorporates logic for controlling LED indicators: one signals the player who wins, while others indicate snake or ladder encounters. Accompanying this module is a testbench that initializes the inputs, generates a clock signal, and systematically tests the SnakesAndLadders module by varying input conditions, monitoring outputs, and providing formatted results for each game cycle. 
 
+ [Verilog File(Gate Level)](Verilog/gatelevel.v)<br>
+ [Verilog File(Behavioral Level)](Verilog/behavioral.v)<br>
+ [Verilog File(Testbench Gate Level)](Verilog/gatelevel_tb.v)<br>
+ [Verilog File(Testbench Behavioral Level)](Verilog/behavioral_tb.v2)<br>
  
-2. Position Tracker Module
-This module updates the player’s position based on the dice roll. It checks if the sum of the current position and the dice value exceeds 100. If the sum is valid, the new position is updated. If not, the player stays at the same position to ensure the position does not exceed 100.
-
-
-3. Snakes and Ladders Adjustment Module
-This module adjusts the player’s position if it lands on a snake or ladder. Using a case statement, it maps specific positions to new ones. For example, landing on 17 moves the player back to 7 (snake), while landing on 28 moves them to 84 (ladder). If the position does not correspond to a snake or ladder, the position remains unchanged.
-
-
-4. Game End Detection Module
-This module checks if the player has won the game. If the player’s position equals 100, the win signal is set to 1, indicating victory. Otherwise, the signal remains 0.
-
-5. Top-Level Game Module
-This module integrates the dice, position tracker, snakes and ladders adjustment, and game end detection modules. It updates the player’s position and win status on each clock cycle. If reset is activated, the player’s position resets to 0. Otherwise, the position is updated based on the dice roll and adjusted for any snakes or ladders.
-
-
-6.. Testbench Module
-The testbench simulates the complete game system. It initializes the clock and reset signals, toggling the clock every 5 time units. After 10 units, the reset is deactivated to start the game. The simulation runs , during which the player’s position and win status are continuously monitored. The testbench helps ensure the game logic works as expected by displaying the position and win status at each time step.
-
-This design efficiently models  snakes and ladders game in Verilog, using modular components for easy testing and simulation.
-  >
 </details>
 
 ## References
