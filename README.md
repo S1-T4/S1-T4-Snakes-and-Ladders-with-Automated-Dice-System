@@ -50,37 +50,28 @@ The digital Snakes and Ladders game system incorporates several interactive and 
 ## Working
 <details>
   <summary>Detail</summary
-          
-The goal of the game is to navigate a player from the starting position (0) to the winning position (100) based on dice rolls while encountering snakes that bring the player back and ladders that advance the player forward.
+![image](https://github.com/user-attachments/assets/3c6ba70c-3191-4641-b8be-28b700288600)
+			 
+Players and Dice:
+Two players (Player 1 and Player 2) roll virtual dice. The output of the dice determines their movement on the board.
+The dice roll is simulated by a circuit generating random numbers within the range of 1-6.
 
-The design consists of the following key modules:
-•	Dice Roll Module: This module simulates rolling a dice. On each clock cycle, it generates a random value between 1 and 6. The dice value resets to 1 when the game resets.
-	•	Position Tracker Module: This module updates the player’s position based on the rolled dice value. If adding the dice value to the current position exceeds 100, the position remains unchanged, preventing overshooting the win condition.
-	•	Snakes and Ladders Adjustment Module: This module adjusts the player’s position when they land on specific squares. If a player lands on a snake’s mouth, they move down to its tail; if they land on a ladder’s base, they climb to its top.
-	•	Game End Detection Module: This module checks if the player’s position is exactly 100, which indicates a win. If so, it signals that the game is over.
-	•	Top-Level Game Module: This central module orchestrates the interaction between the other modules. It updates the player’s position based on the results of the dice roll and checks for a win condition, all triggered by the clock cycles.
+Position Updation:
+Each player's current position is tracked and updated based on the dice roll.
+The position is updated using combinational logic, and binary-coded decimal (BCD) to 7-segment converters are used to display the players' positions on the board.
 
-Working:
-	•	Initialization: The player starts at position 0. Upon reset, the game initializes the player position and prepares for a new game.
-	•	Dice Rolling: The dice roll is triggered on each clock cycle, producing a value from 1 to 6.
-	•	Position Update: The position tracker updates the player’s position based on the rolled value. It ensures that the position does not exceed 100.
-	•	Snakes and Ladders Check: After updating the position, the game checks for any snakes or ladders affecting the player’s new position.
-	•	Win Check: After updating the position, the game checks if the player has reached position 100, indicating victory.
+Snakes and Ladders:
+The circuit detects if a player lands on a snake or ladder using conditional logic gates.
+If a snake is encountered, the player's position is decremented (moving them down). Conversely, if a ladder is encountered, the player's position is incremented (moving them up).
+Win Condition:
 
-Working
-1.Truth Table
-Each row in the truth table shows the player's current state, the dice roll, the new state if no ladder or snake is present, whether a ladder/snake exists, and the final state after adjusting for snakes or ladders.
+The circuit includes logic to detect if a player reaches or exceeds position 100, which is the winning condition.
+A win signal is activated when the condition is met, stopping further dice rolls for that player.
 
+Reset and Dice Operations:
+A reset button allows the game to restart, resetting all positions and win conditions.
+The dice buttons control when a new random number is generated to simulate a dice roll.     
 
-
-2.State Diagrams
-• Each state represents the current position of the player on the board.
-• Inputs: Dice roll (values from 1 to 6)
-• Outputs: Updated player position based on the dice roll, and whether the player lands on a ladder (go up) or a snake (go down).
-• Transitions: If the player lands on a ladder, the state jumps to a higher value.
-If they land on a snake, the state moves to a lower value.
-• Eg. State 5 → Dice Roll 3 → State 8
-• State 17 → Snake to State 7 (fall)
 
   > 
 </details>
