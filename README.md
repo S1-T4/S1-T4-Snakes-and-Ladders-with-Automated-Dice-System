@@ -63,8 +63,8 @@ The position is updated using combinational logic, and binary-coded decimal (BCD
 Snakes and Ladders:
 The circuit detects if a player lands on a snake or ladder using conditional logic gates.
 If a snake is encountered, the player's position is decremented (moving them down). Conversely, if a ladder is encountered, the player's position is incremented (moving them up).
-Win Condition:
 
+Win Condition:
 The circuit includes logic to detect if a player reaches or exceeds position 100, which is the winning condition.
 A win signal is activated when the condition is met, stopping further dice rolls for that player.
 
