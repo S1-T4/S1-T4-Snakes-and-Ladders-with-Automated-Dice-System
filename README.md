@@ -96,24 +96,24 @@ If they land on a snake, the state moves to a lower value.
   <details>
     <summary>Main Circuit</summary>
     
- ![image](https://github.com/user-attachments/assets/a958378d-4443-4ed8-a4d3-5e9eba74fc72)
+ <img src="https://github.com/user-attachments/assets/a958378d-4443-4ed8-a4d3-5e9eba74fc72" width="500"/>
 </details>
 <details>
     <summary>Dice</summary>
-    ![image](https://github.com/user-attachments/assets/294f9b35-a1ad-4749-8b96-093bd1dabd9d)
+    <img src="https://github.com/user-attachments/assets/294f9b35-a1ad-4749-8b96-093bd1dabd9d" width="500"/>
 </details>
 <details>
     <summary>Win Condition</summary>
-    ![image](https://github.com/user-attachments/assets/cf13de14-6757-43f9-9875-9a627fa2e1a1)
+     <img src="https://github.com/user-attachments/assets/cf13de14-6757-43f9-9875-9a627fa2e1a1" width="500"/>
 
 </details>
 <details>
     <summary>BCD to 7 segment</summary>
-   ![image](https://github.com/user-attachments/assets/2b60ef0a-c409-47f6-be30-70fdd691e8de)
-</details>
+   ! <img src="https://github.com/user-attachments/assets/2b60ef0a-c409-47f6-be30-70fdd691e8de" width="500"/>
+</details
 <details>
     <summary>Binary to BCD</summary>
-  ![image](https://github.com/user-attachments/assets/5b639652-9b63-46a2-953f-78fea08c2493)
+  <img src="https://github.com/user-attachments/assets/5b639652-9b63-46a2-953f-78fea08c2493" width="500"/>
 
 </details>
 
