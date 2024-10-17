@@ -33,7 +33,7 @@ It will be a multiplayer game. -The board consists of 100 squares arranged in a 
 
 
 >**Features:**
-The digital Snakes and Ladders game system incorporates several interactive and engaging features. Light indicators at the start and end points of snakes and ladders help players track their movements visually. A time tracker is integrated to monitor the game duration. Upon winning, a sound effect enhances the excitement, signaling the game’s completion. Additionally, an automated dice system is implemented, removing manual rolls and ensuring a seamless gaming experience. These features create a smooth and dynamic gameplay environment .
+The digital Snakes and Ladders game system incorporates several interactive and engaging features. Light indicators at the start and end points of snakes and ladders help players track their movements visually. . Additionally, an automated dice system is implemented, removing manual rolls and ensuring a seamless gaming experience. These features create a smooth and dynamic gameplay environment .
 
 </details>
 
