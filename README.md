@@ -110,7 +110,7 @@ If they land on a snake, the state moves to a lower value.
 <details>
     <summary>BCD to 7 segment</summary>
    ! <img src="https://github.com/user-attachments/assets/2b60ef0a-c409-47f6-be30-70fdd691e8de" width="500"/>
-</details
+</details>
 <details>
     <summary>Binary to BCD</summary>
   <img src="https://github.com/user-attachments/assets/5b639652-9b63-46a2-953f-78fea08c2493" width="500"/>
