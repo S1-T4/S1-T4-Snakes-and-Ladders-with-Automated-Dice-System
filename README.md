@@ -89,26 +89,36 @@ If they land on a snake, the state moves to a lower value.
 ## Logisim Circuit Diagram
 <details>
   <summary>Detail</summary>
-  
-![image](https://github.com/user-attachments/assets/b62fcafd-c6ce-436d-8976-55e0af547463)
+  This circuit design simulates a digital version of the Snakes and Ladders game for two players. It incorporates logic gates, BCD to 7-segment displays, and a dice roll mechanism to manage player movements on the board. The system tracks each player's position, handles snake and ladder encounters, and determines the win condition when a player reaches the 100th position. With reset and dice control buttons, the circuit automates the gameplay, providing a dynamic and interactive experience.
+  </br>
 
   
-### Stepwise Logisim Circuit Design
+  <details>
+    <summary>Main Circuit</summary>
+    
+ ![image](https://github.com/user-attachments/assets/a958378d-4443-4ed8-a4d3-5e9eba74fc72)
+</details>
+<details>
+    <summary>Dice</summary>
+    ![image](https://github.com/user-attachments/assets/294f9b35-a1ad-4749-8b96-093bd1dabd9d)
+</details>
+<details>
+    <summary>Win Condition</summary>
+    ![image](https://github.com/user-attachments/assets/cf13de14-6757-43f9-9875-9a627fa2e1a1)
 
-1. **Dice Roll Logic**: 
-   Use a random generator to simulate a dice roll (1-6) with a counter and a button. Each button press triggers a new roll.
+</details>
+<details>
+    <summary>BCD to 7 segment</summary>
+   ![image](https://github.com/user-attachments/assets/2b60ef0a-c409-47f6-be30-70fdd691e8de)
+</details>
+<details>
+    <summary>Binary to BCD</summary>
+  ![image](https://github.com/user-attachments/assets/5b639652-9b63-46a2-953f-78fea08c2493)
 
-2. **Player Position Tracker**: 
-   Create a register to hold the player's position. Add the dice value to update the position. Use a comparator to check if the new position exceeds 100; if so, reset the position. This also manages adjustments for snakes and ladders.
+</details>
 
-3. **Snakes and Ladders**: 
-   Detect when a player lands on a snake or ladder using comparators for specific positions. The output connects to a multiplexer, adjusting the player’s position accordingly.
+  
 
-4. **Game End Detection**: 
-   Connect the player position register to a comparator to check for a win condition (position equals 100). An LED lights up to indicate victory.
-
-5. **Clock and Reset**: 
-   A clock pulse drives game progression, and a reset button initializes the game.
 </details>
 
 <!-- Fifth Section -->
