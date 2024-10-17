@@ -49,8 +49,10 @@ The digital Snakes and Ladders game system incorporates several interactive and 
 <!-- Third Section -->
 ## Working
 <details>
-  <summary>Detail</summary
-![image](https://github.com/user-attachments/assets/3c6ba70c-3191-4641-b8be-28b700288600)
+  <summary>Detail</summary>
+
+  ![image](https://github.com/user-attachments/assets/1a614048-45a1-4854-a4b8-69f9cd3538bf)
+
 			 
 Players and Dice:
 Two players (Player 1 and Player 2) roll virtual dice. The output of the dice determines their movement on the board.
@@ -70,7 +72,10 @@ A win signal is activated when the condition is met, stopping further dice rolls
 
 Reset and Dice Operations:
 A reset button allows the game to restart, resetting all positions and win conditions.
-The dice buttons control when a new random number is generated to simulate a dice roll.     
+The dice buttons control when a new random number is generated to simulate a dice roll.
+
+![image](https://github.com/user-attachments/assets/d240fe38-6cf0-4d35-9496-93672522e678)
+
 
 
   > 
