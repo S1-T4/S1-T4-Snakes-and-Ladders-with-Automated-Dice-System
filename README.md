@@ -127,7 +127,7 @@ The table shows how the game works.
  [Verilog File(Gate Level)](Verilog/gatelevel.v)<br>
  [Verilog File(Behavioral Level)](Verilog/behavioral.v)<br>
  [Verilog File(Testbench Gate Level)](Verilog/gatelevel_tb.v)<br>
- [Verilog File(Testbench Behavioral Level)](Verilog/behavioral_tb.v2)<br>
+ [Verilog File(Testbench Behavioral Level)](Verilog/behavioral_tb.v)<br>
  
 </details>
 
