@@ -74,7 +74,10 @@ Reset and Dice Operations:
 A reset button allows the game to restart, resetting all positions and win conditions.
 The dice buttons control when a new random number is generated to simulate a dice roll.
 
+							STATE TABLE 
 ![image](https://github.com/user-attachments/assets/d240fe38-6cf0-4d35-9496-93672522e678)
+
+The table shows how the game works.
 
 
 
