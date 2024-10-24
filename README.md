@@ -95,13 +95,19 @@ The table shows how the game works.
   <details>
     <summary>Main Circuit</summary>
     
- <img src="https://github.com/user-attachments/assets/a958378d-4443-4ed8-a4d3-5e9eba74fc72" width="650"/>
+ <img src="https://github.com/user-attachments/assets/4aa907a3-56ea-49a6-a78e-85fbf5abd4e9" width="650"/>
+
 </details>
 <details>
     <summary>Dice</summary>
     <img src="https://github.com/user-attachments/assets/294f9b35-a1ad-4749-8b96-093bd1dabd9d" width="800"/>
 </details>
 <details>
+	<details>
+    <summary>Snakes and Ladders</summary>
+  <img src="https://github.com/user-attachments/assets/05a6d3ba-b483-459a-a269-ec56ef553cb0" width="800"/>
+
+</details>
     <summary>Win Condition</summary>
      <img src="https://github.com/user-attachments/assets/cf13de14-6757-43f9-9875-9a627fa2e1a1" width="800"/>
 
