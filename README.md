@@ -24,16 +24,17 @@
 <details>
   <summary>Detail</summary>
   
-  >**Motivation:**
+**Motivation:**
 Snake and Ladder has been a classical board game, enjoyed by children and adult alike. However, the old version of the game can feel too simple, especially when today we are surrounded by technology and it has become a big part in our lives.by adding technology to the game, we can make it more exciting, fun and educational. So the goal is to combine this classical board game with modern technology which will provide more features to the game, thus making it more interactive to keep players interested while they are playing.
 
 
->**Problem Statement:**
+**Problem Statement:**
 It will be a multiplayer game. -The board consists of 100 squares arranged in a 10x10 grid.The positions of snakes and ladders will be predefined,in which when a ladder is encountered player moves higher in the game while when a snake is encountered the player goes down.The players move according to the result of an automated dice.After each dice roll, the system should check whether the new position corresponds to a snake or a ladder. If so, the player’s position should be adjusted accordingly.Finish in the game is detected when a player reaches exactly square 100, indicating the end of the game.
 
 
->**Features:**
+**Features:**
 The digital Snakes and Ladders game system incorporates several interactive and engaging features. Light indicators at the start and end points of snakes and ladders help players track their movements visually. . Additionally, an automated dice system is implemented, removing manual rolls and ensuring a seamless gaming experience. These features create a smooth and dynamic gameplay environment .
+The two most important features of the circuit it can be played with any number of players, any number of snakes and ladders can be added and the game is user friendly too.
 
 </details>
 
@@ -78,10 +79,6 @@ The dice buttons control when a new random number is generated to simulate a dic
 ![image](https://github.com/user-attachments/assets/d240fe38-6cf0-4d35-9496-93672522e678)
 
 The table shows how the game works.
-
-
-
-  > 
 </details>
 
 <!-- Fourth Section -->
