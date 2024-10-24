@@ -102,12 +102,12 @@ The table shows how the game works.
     <summary>Dice</summary>
     <img src="https://github.com/user-attachments/assets/294f9b35-a1ad-4749-8b96-093bd1dabd9d" width="800"/>
 </details>
-<details>
 	<details>
     <summary>Snakes and Ladders</summary>
   <img src="https://github.com/user-attachments/assets/05a6d3ba-b483-459a-a269-ec56ef553cb0" width="800"/>
 
 </details>
+ <details>   
     <summary>Win Condition</summary>
      <img src="https://github.com/user-attachments/assets/cf13de14-6757-43f9-9875-9a627fa2e1a1" width="800"/>
 
