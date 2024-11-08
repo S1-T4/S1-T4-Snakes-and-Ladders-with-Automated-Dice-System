@@ -34,14 +34,17 @@ It will be a multiplayer game. -The board consists of 100 squares arranged in a 
 
 **Features:**
 The digital Snakes and Ladders system includes several interactive features:
-(a) Can be played with any number of players
-(b) The number of snakes and ladders can be updated according to the User
-(c) A single button updates the position for all players
-(d) Led Glows ’yellow’ for the player which will win
-(e) Led Glow ’red’ for every snake encounter and ’green’ for every ladder encounter
-(f) A reset button is fixed for user to reset the game whenever he wants
-(g) A display is present which will show the current position
+
+- Can be played with any number of players.
+- The number of snakes and ladders can be updated by the user.
+- A single button updates the position for all players.
+- LED glows **yellow** for the player who is about to win.
+- LED glows **red** for every snake encounter and **green** for every ladder encounter.
+- A reset button allows the user to reset the game at any time.
+- A display shows the current position of players.
+
 </details>
+
 
 ## Functional Block Diagram
 <details>
@@ -90,23 +93,14 @@ The table shows how the game works.
   <summary>Detail</summary>
   
 The design consists of the following key modules:
-**1. Dice Roll Module:** This module simulates rolling a dice. On each clock cycle, it generates
-a random value between 1 and 6. The dice value resets to 1 when the game resets.
-**2. Snakes and Ladders Adjustment Module:** This module adjusts the player’s position
-when they land on specific squares. If a player lands on a snake’s mouth, they move down to
-its tail; if they land on a ladder’s base, they climb to its top.
-**3. Win Module:** This module checks if the player’s position is exactly 100, which indicates a
-win. If so, it signals that the game is over.
-3
-**4. Binary to BCD Module:** This module converts the binary position to BCD format which
-we need because to display the position on the 7 Segment Display which takes only the input
-in form of BCD.
-**5. BCD to 7 segment:** This module send the 8 bit binary in the form of BCD codes to the 7
-segment display. The display then shows the Player Position which he is on
-**6. Main Module:** This central module orchestrates the interaction between the other modules.
-It updates the player’s position based on the results of the dice roll and checks for a win
-condition, all triggered by the clock cycles which is given by a button
-  
+
+- **Dice Roll Module:** This module simulates rolling a dice. On each clock cycle, it generates a random value between 1 and 6. The dice value resets to 1 when the game resets.
+- **Snakes and Ladders Adjustment Module:** This module adjusts the player’s position when they land on specific squares. If a player lands on a snake’s mouth, they move down to its tail; if they land on a ladder’s base, they climb to its top.
+- **Win Module:** This module checks if the player’s position is exactly 100, which indicates a win. If so, it signals that the game is over.
+- **Binary to BCD Module:** This module converts the binary position to BCD format, which is needed to display the position on the 7-segment display, as it only takes BCD input.
+- **BCD to 7 Segment:** This module sends the 8-bit binary in the form of BCD codes to the 7-segment display, which then shows the player’s position.
+- **Main Module:** This central module orchestrates the interaction between the other modules. It updates the player’s position based on the results of the dice roll and checks for a win condition, all triggered by clock cycles controlled by a button.
+
 </details>
 
 
