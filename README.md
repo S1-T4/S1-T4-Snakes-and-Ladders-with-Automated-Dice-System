@@ -33,9 +33,14 @@ It will be a multiplayer game. -The board consists of 100 squares arranged in a 
 
 
 **Features:**
-The digital Snakes and Ladders game system incorporates several interactive and engaging features. Light indicators at the start and end points of snakes and ladders help players track their movements visually. . Additionally, an automated dice system is implemented, removing manual rolls and ensuring a seamless gaming experience. These features create a smooth and dynamic gameplay environment .
-The two most important features of the circuit it can be played with any number of players, any number of snakes and ladders can be added and the game is user friendly too.
-
+The digital Snakes and Ladders system includes several interactive features:
+(a) Can be played with any number of players
+(b) The number of snakes and ladders can be updated according to the User
+(c) A single button updates the position for all players
+(d) Led Glows ’yellow’ for the player which will win
+(e) Led Glow ’red’ for every snake encounter and ’green’ for every ladder encounter
+(f) A reset button is fixed for user to reset the game whenever he wants
+(g) A display is present which will show the current position
 </details>
 
 ## Functional Block Diagram
@@ -45,7 +50,6 @@ The two most important features of the circuit it can be played with any number 
   <img src="https://github.com/user-attachments/assets/87c3e93b-710c-4d24-b5b7-8bbfa6ba6934" alt="Functional Block Diagram" width="300" />
   
 </details>
-
 
 <!-- Third Section -->
 ## Working
@@ -80,6 +84,31 @@ The dice buttons control when a new random number is generated to simulate a dic
 
 The table shows how the game works.
 </details>
+
+## Design
+<details>
+  <summary>Detail</summary>
+  
+The design consists of the following key modules:
+**1. Dice Roll Module:** This module simulates rolling a dice. On each clock cycle, it generates
+a random value between 1 and 6. The dice value resets to 1 when the game resets.
+**2. Snakes and Ladders Adjustment Module:** This module adjusts the player’s position
+when they land on specific squares. If a player lands on a snake’s mouth, they move down to
+its tail; if they land on a ladder’s base, they climb to its top.
+**3. Win Module:** This module checks if the player’s position is exactly 100, which indicates a
+win. If so, it signals that the game is over.
+3
+**4. Binary to BCD Module:** This module converts the binary position to BCD format which
+we need because to display the position on the 7 Segment Display which takes only the input
+in form of BCD.
+**5. BCD to 7 segment:** This module send the 8 bit binary in the form of BCD codes to the 7
+segment display. The display then shows the Player Position which he is on
+**6. Main Module:** This central module orchestrates the interaction between the other modules.
+It updates the player’s position based on the results of the dice roll and checks for a win
+condition, all triggered by the clock cycles which is given by a button
+  
+</details>
+
 
 <!-- Fourth Section -->
 ## Logisim Circuit Diagram
@@ -135,6 +164,20 @@ The table shows how the game works.
  <img src="https://github.com/user-attachments/assets/12c3a673-99c6-4619-b695-8f710074e896" width="300"/>
 
  
+</details>
+
+## Hardware 
+<details>
+  <summary>Detail</summary>
+  
+  <img src="https://github.com/user-attachments/assets/4be47af3-d4d0-4651-94ca-bc69abe6a7cf" alt="Small Scale Circuit" width="300" />
+
+  In the Hardware Implementation of our Project we have scaled down the game to a 4x4 grid
+and a dice which will give numbers from 1-4. Also we have inserted a snake and a ladder with their
+corresponding LED indicators. The button remains the same for the player which will start the
+game. The game ending condition is same with the LED glowing yellow if the player has completed
+the game.
+
 </details>
 
 ## References
