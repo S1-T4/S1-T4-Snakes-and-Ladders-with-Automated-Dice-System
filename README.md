@@ -164,7 +164,7 @@ The design consists of the following key modules:
 <details>
   <summary>Detail</summary>
   
-  <img src="https://github.com/user-attachments/assets/4be47af3-d4d0-4651-94ca-bc69abe6a7cf" alt="Small Scale Circuit" width="300" />
+  <img src="https://github.com/user-attachments/assets/4be47af3-d4d0-4651-94ca-bc69abe6a7cf" alt="Small Scale Circuit" width="800" />
 
   In the Hardware Implementation of our Project we have scaled down the game to a 4x4 grid
 and a dice which will give numbers from 1-4. Also we have inserted a snake and a ladder with their
