@@ -55,6 +55,22 @@ The digital Snakes and Ladders system includes several interactive features:
 </details>
 
 <!-- Third Section -->
+
+## Design
+<details>
+  <summary>Detail</summary>
+  
+The design consists of the following key modules:
+
+- **Dice Roll Module:** This module simulates rolling a dice. On each clock cycle, it generates a random value between 1 and 6. The dice value resets to 1 when the game resets.
+- **Snakes and Ladders Adjustment Module:** This module adjusts the player’s position when they land on specific squares. If a player lands on a snake’s mouth, they move down to its tail; if they land on a ladder’s base, they climb to its top.
+- **Win Module:** This module checks if the player’s position is exactly 100, which indicates a win. If so, it signals that the game is over.
+- **Binary to BCD Module:** This module converts the binary position to BCD format, which is needed to display the position on the 7-segment display, as it only takes BCD input.
+- **BCD to 7 Segment:** This module sends the 8-bit binary in the form of BCD codes to the 7-segment display, which then shows the player’s position.
+- **Main Module:** This central module orchestrates the interaction between the other modules. It updates the player’s position based on the results of the dice roll and checks for a win condition, all triggered by clock cycles controlled by a button.
+
+</details>
+
 ## Working
 <details>
   <summary>Detail</summary>
@@ -88,20 +104,6 @@ The dice buttons control when a new random number is generated to simulate a dic
 The table shows how the game works.
 </details>
 
-## Design
-<details>
-  <summary>Detail</summary>
-  
-The design consists of the following key modules:
-
-- **Dice Roll Module:** This module simulates rolling a dice. On each clock cycle, it generates a random value between 1 and 6. The dice value resets to 1 when the game resets.
-- **Snakes and Ladders Adjustment Module:** This module adjusts the player’s position when they land on specific squares. If a player lands on a snake’s mouth, they move down to its tail; if they land on a ladder’s base, they climb to its top.
-- **Win Module:** This module checks if the player’s position is exactly 100, which indicates a win. If so, it signals that the game is over.
-- **Binary to BCD Module:** This module converts the binary position to BCD format, which is needed to display the position on the 7-segment display, as it only takes BCD input.
-- **BCD to 7 Segment:** This module sends the 8-bit binary in the form of BCD codes to the 7-segment display, which then shows the player’s position.
-- **Main Module:** This central module orchestrates the interaction between the other modules. It updates the player’s position based on the results of the dice roll and checks for a win condition, all triggered by clock cycles controlled by a button.
-
-</details>
 
 
 <!-- Fourth Section -->
